@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ff1a8c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  background-color: #ff1a8c;
+}
+
+div {
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  width:50%;
+}
+</style>
+</head>
+<body style="background-color: #ffe6e9;" >
+
+<centre>
+<div style="margin: 0% 25% 20% 23%">
+  <center><b><h2 style="margin-top: 0; color:#ff1a8c;">BREAST CANCER PREDICTION MODEL</h2></b></center>
+  <form action="{{ url_for('predict')}}", method="POST">
+
+    <input type="text" id="brca1" name="brca1" placeholder="BRCA1">
+
+    <input type="text" id="brca2" name="brca2" placeholder="BRCA2">
+
+    <input type="text" id="PLAB2" name="PLAB2" placeholder="PLAB2">
+
+    <input type="text" id="CHEK2" name="CHEK2" placeholder="CHEK2">
+
+    <input type="text" id="CDH1" name="CDH1" placeholder="CDH1">
+
+    <input type="text" id="PTEN" name="PTEN" placeholder="PTEN">
+
+    <input type="text" id="STK11" name="STK11" placeholder="STK11">
+
+    <input type="text" id="TP53" name="TP53" placeholder="TP53">
+
+    <input type="text" id="ATM" name="ATM" placeholder="ATM">
+
+    <input type="text" id="BARD1" name="BARD1" placeholder="BARD1">
+
+    <input type="text" id="BRIP1" name="BRIP1" placeholder="BRIP1">
+
+    <input type="text" id="CASP8" name="CASP8" placeholder="CASP8">
+
+    <input type="text" id="CTLA4" name="CTLA4" placeholder="CTLA4">
+
+    <input type="text" id="CYP19A1" name="CYP19A1" placeholder="CYP19A1">
+
+    <input type="text" id="FGFR2" name="FGFR2" placeholder="FGFR2">
+
+    <input type="text" id="LSP1" name="LSP1" placeholder="LSP1">
+
+    <input type="text" id="MAP3K1" name="MAP3K1" placeholder="MAP3K1">
+
+    <input type="text" id="MRE11A" name="MRE11A" placeholder="MRE11A">
+
+    <input type="text" id="NBN" name="NBN" placeholder="NBN">
+
+    <input type="text" id="RAD51" name="RAD51" placeholder="RAD51">
+
+    <input type="text" id="TERT" name="TERT" placeholder="TERT">
+
+    <input type="submit" value="Submit">
+    <p style="margin-left: 40%;color:#ff1a8c;font-size:18px; "><b>{{pred}}</b></p>
+  </form>
+</div>
+<centre>
+
+</body>
+</html>
